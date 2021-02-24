@@ -5,7 +5,7 @@
 ### App Description
 This is the Lab1 assignment for developing the Flashcard Application.
 
-### App Walk-though
+### App Walk-through
 
 <img src="https://imgur.com/gV0zW21" width=200><br>
 
