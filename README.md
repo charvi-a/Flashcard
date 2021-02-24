@@ -7,7 +7,7 @@ This is the Lab1 assignment for developing the Flashcard Application.
 
 ### App Walk-through
 
-<img src= https://imgur.com/a/NjAQJnE width=200><br>
+<img src= "https://imgur.com/a/NjAQJnE.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
