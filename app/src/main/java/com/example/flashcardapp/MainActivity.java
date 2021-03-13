@@ -8,13 +8,25 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
+    FlashcardDatabase flashcardDB;
+    List<Flashcard> savedCards;
+    int ind = 0 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        flashcardDB = new FlashcardDatabase(this);
+        savedCards = flashcardDB.getAllCards();
+
+        if (savedCards != null && savedCards.size() > 0) {
+            ((TextView) findViewById(R.id.question)).setText(savedCards.get(0).getQuestion());
+            ((TextView) findViewById(R.id.answer)).setText(savedCards.get(0).getAnswer());
+        }
         final TextView Question = findViewById(R.id.question);
         final TextView Answer = findViewById(R.id.answer);
         Question.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +45,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        findViewById(R.id.nextBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(savedCards.size() == 0){
+                    return;
+                }
+                ind++;
+                if(ind >= savedCards.size() ){
+                    ind = 0;
+                }
+                savedCards = flashcardDB.getAllCards();
+                Flashcard new_card =  savedCards.get(ind);
+
+                ((TextView) findViewById(R.id.question)).setText(new_card.getQuestion());
+                ((TextView) findViewById(R.id.answer)).setText(new_card.getAnswer());
+            }
+        });
+
+
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -43,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.question)).setText(string1);
             ((TextView) findViewById(R.id.answer)).setText(string2);
 
+            Flashcard new_card = new Flashcard(string1,string2);
+            flashcardDB.insertCard(new_card);
+            savedCards = flashcardDB.getAllCards();
         }
     }
 }
