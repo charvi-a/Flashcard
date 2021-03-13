@@ -7,7 +7,7 @@ This is the Lab3 assignment for developing the Flashcard Application.
 
 ### App Walk-through
 
-lab3_gif.gif
+<img src= lab3_gif.gif width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
