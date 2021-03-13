@@ -28,6 +28,13 @@ public class AddcardActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.cancelBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
     }
 }
