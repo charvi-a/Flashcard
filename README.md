@@ -5,9 +5,9 @@
 ### App Description
 This is the Lab3 assignment for developing the Flashcard Application.
 
-### App Walk-though
+### App Walk-through
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://i.imgur.com/tWUjUg8.mp4" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
