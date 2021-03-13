@@ -30,7 +30,7 @@ This is the Lab2 assignment for developing the Flashcard Application.
 
 ### App Walk-though
 
-<img src= https://i.imgur.com/TK6tG6a.gif width=200><br>
+<img src= https://i.imgur.com/woGVPmt.gif><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
