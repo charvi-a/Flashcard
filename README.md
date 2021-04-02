@@ -5,7 +5,7 @@
 ### App Description
 This is the Lab4 assignment for developing the Flashcard Application.
 
-### App Walk-though
+### App Walk-through
 
 <img src="lab4 (2).gif" width=200><br>
 
@@ -32,7 +32,7 @@ This is the Lab3 assignment for developing the Flashcard Application.
 ### App Description
 This is the Lab2 assignment for developing the Flashcard Application.
 
-### App Walk-though
+### App Walk-through
 
 <img src= https://i.imgur.com/woGVPmt.gif width=200><br>
 
