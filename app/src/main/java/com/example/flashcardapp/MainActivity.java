@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 questionSideView.setVisibility(View.INVISIBLE);
                 answerSideView.setVisibility(View.VISIBLE);
 
-                anim.setDuration(300);
+                anim.setDuration(250);
                 anim.start();
             }
         });
