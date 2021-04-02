@@ -7,7 +7,7 @@ This is the Lab4 assignment for developing the Flashcard Application.
 
 ### App Walk-though
 
-<img src="lab4.gif" width=200><br>
+<img src="lab4 (2).gif" width=200><br>
 
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
