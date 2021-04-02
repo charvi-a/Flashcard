@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#F0E68C">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="Who is the 44th President of the United States?"
         android:id="@+id/question"
-        android:textSize="40sp"
+        android:textSize="35sp"
+        android:layout_margin="10dp"
         android:gravity="center"
         android:elevation="5dp"
         android:textColor="@color/colorPrimaryDark"
